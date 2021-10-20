@@ -14,9 +14,13 @@ class EntryViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Add Navigation Save Item
+        navigationItem.rightBarButtonItem = UIBarButtonItem(title: "Save", style: .done, target: self, action: #selector(TapSaveButton))
         
     }
     
-
+    @objc private func TapSaveButton() {
+        
+    }
 
 }

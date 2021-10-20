@@ -32,7 +32,11 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="To Do List" leftItemsSupplementBackButton="YES" largeTitleDisplayMode="always" id="caB-BH-vsQ">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="3Ff-2L-yh1"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="3Ff-2L-yh1">
+                            <connections>
+                                <segue destination="zHN-3v-7tq" kind="show" id="GU7-ze-x8i"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g9g-sS-6vu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -48,12 +52,12 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kv5-7z-Fcn">
-                                <rect key="frame" x="20" y="134" width="374" height="34"/>
+                                <rect key="frame" x="20" y="230" width="374" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="8Az-ev-NVH">
-                                <rect key="frame" x="0.0" y="218" width="414" height="216"/>
+                                <rect key="frame" x="0.0" y="314" width="414" height="216"/>
                             </datePicker>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Mwk-q1-yOw"/>
@@ -67,6 +71,7 @@
                             <constraint firstItem="8Az-ev-NVH" firstAttribute="trailing" secondItem="Mwk-q1-yOw" secondAttribute="trailing" id="pDz-iO-OGI"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="WGm-ae-6Ug"/>
                     <connections>
                         <outlet property="datePicker" destination="8Az-ev-NVH" id="qTn-04-q8L"/>
                         <outlet property="textField" destination="kv5-7z-Fcn" id="geq-jJ-eUN"/>
