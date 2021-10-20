@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -37,6 +38,58 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="g9g-sS-6vu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="868.11594202898561" y="80.357142857142847"/>
+        </scene>
+        <!--Entry View Controller-->
+        <scene sceneID="KxL-u9-g5q">
+            <objects>
+                <viewController storyboardIdentifier="enter" id="zHN-3v-7tq" customClass="EntryViewController" customModule="toDoListWithRealm" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sTw-J2-dmv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kv5-7z-Fcn">
+                                <rect key="frame" x="20" y="134" width="374" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="8Az-ev-NVH">
+                                <rect key="frame" x="0.0" y="218" width="414" height="216"/>
+                            </datePicker>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Mwk-q1-yOw"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="8Az-ev-NVH" firstAttribute="leading" secondItem="Mwk-q1-yOw" secondAttribute="leading" id="FRY-vY-5V4"/>
+                            <constraint firstItem="Mwk-q1-yOw" firstAttribute="trailing" secondItem="kv5-7z-Fcn" secondAttribute="trailing" constant="20" id="JeN-63-fEY"/>
+                            <constraint firstItem="kv5-7z-Fcn" firstAttribute="leading" secondItem="Mwk-q1-yOw" secondAttribute="leading" constant="20" id="Trs-wL-cuX"/>
+                            <constraint firstItem="kv5-7z-Fcn" firstAttribute="top" secondItem="Mwk-q1-yOw" secondAttribute="top" constant="90" id="bOR-hN-CG3"/>
+                            <constraint firstItem="8Az-ev-NVH" firstAttribute="top" secondItem="kv5-7z-Fcn" secondAttribute="bottom" constant="50" id="etv-BC-VuS"/>
+                            <constraint firstItem="8Az-ev-NVH" firstAttribute="trailing" secondItem="Mwk-q1-yOw" secondAttribute="trailing" id="pDz-iO-OGI"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="datePicker" destination="8Az-ev-NVH" id="qTn-04-q8L"/>
+                        <outlet property="textField" destination="kv5-7z-Fcn" id="geq-jJ-eUN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2hc-aX-gOb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1633" y="80"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="k6y-7j-Urs">
+            <objects>
+                <viewController id="WSh-7e-cul" customClass="DetailViewController" customModule="toDoListWithRealm" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DJu-Nn-VLN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="NFh-U5-Mxm"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4I5-cx-Pyh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2375" y="80"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="d2y-7d-tWC">

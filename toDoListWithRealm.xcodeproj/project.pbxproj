@@ -14,6 +14,8 @@
 		41D9B39227201142008211CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41D9B39027201142008211CC /* LaunchScreen.storyboard */; };
 		41D9B39A27201164008211CC /* README.MD in Resources */ = {isa = PBXBuildFile; fileRef = 41D9B39927201164008211CC /* README.MD */; };
 		41D9B39C27201E10008211CC /* TodoTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D9B39B27201E10008211CC /* TodoTableViewController.swift */; };
+		41D9B39E27203F6C008211CC /* EntryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D9B39D27203F6C008211CC /* EntryViewController.swift */; };
+		41D9B3A127203F9B008211CC /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41D9B3A027203F9B008211CC /* DetailViewController.swift */; };
 		421C9D9E67446DDF5B6D0F3A /* Pods_toDoListWithRealm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20E67B5610B2276C2E6CFB69 /* Pods_toDoListWithRealm.framework */; };
 /* End PBXBuildFile section */
 
@@ -28,6 +30,8 @@
 		41D9B39327201142008211CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41D9B39927201164008211CC /* README.MD */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.MD; sourceTree = "<group>"; };
 		41D9B39B27201E10008211CC /* TodoTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTableViewController.swift; sourceTree = "<group>"; };
+		41D9B39D27203F6C008211CC /* EntryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryViewController.swift; sourceTree = "<group>"; };
+		41D9B3A027203F9B008211CC /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		5549B0E0F6B1500F79F0BC7D /* Pods-toDoListWithRealm.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-toDoListWithRealm.debug.xcconfig"; path = "Target Support Files/Pods-toDoListWithRealm/Pods-toDoListWithRealm.debug.xcconfig"; sourceTree = "<group>"; };
 		8D0BA779FFC03412CDAA4E17 /* Pods-toDoListWithRealm.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-toDoListWithRealm.release.xcconfig"; path = "Target Support Files/Pods-toDoListWithRealm/Pods-toDoListWithRealm.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -77,6 +81,8 @@
 				41D9B3852720113C008211CC /* AppDelegate.swift */,
 				41D9B3872720113C008211CC /* SceneDelegate.swift */,
 				41D9B38B2720113C008211CC /* Main.storyboard */,
+				41D9B39D27203F6C008211CC /* EntryViewController.swift */,
+				41D9B3A027203F9B008211CC /* DetailViewController.swift */,
 				41D9B39B27201E10008211CC /* TodoTableViewController.swift */,
 				41D9B38E27201142008211CC /* Assets.xcassets */,
 				41D9B39027201142008211CC /* LaunchScreen.storyboard */,
@@ -211,6 +217,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				41D9B3862720113C008211CC /* AppDelegate.swift in Sources */,
+				41D9B39E27203F6C008211CC /* EntryViewController.swift in Sources */,
+				41D9B3A127203F9B008211CC /* DetailViewController.swift in Sources */,
 				41D9B39C27201E10008211CC /* TodoTableViewController.swift in Sources */,
 				41D9B3882720113C008211CC /* SceneDelegate.swift in Sources */,
 			);
