@@ -34,6 +34,7 @@
                     <navigationItem key="navigationItem" title="To Do List" leftItemsSupplementBackButton="YES" largeTitleDisplayMode="always" id="caB-BH-vsQ">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="3Ff-2L-yh1">
                             <connections>
+                                <action selector="tapAddButton:" destination="bSa-ec-JhW" id="cnc-Vd-OJb"/>
                                 <segue destination="zHN-3v-7tq" kind="show" id="GU7-ze-x8i"/>
                             </connections>
                         </barButtonItem>

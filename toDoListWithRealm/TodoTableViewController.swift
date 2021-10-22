@@ -14,12 +14,15 @@ class ToDoListItem: Object {
 }
 
 class TodoTableViewController: UITableViewController {
-    
+   
+    private let realm = try! Realm()
     private var data = [ToDoListItem]()
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        data = realm.objects(ToDoListItem.self).map( { $0 })
 
     }
 
@@ -37,4 +40,18 @@ class TodoTableViewController: UITableViewController {
         return cell
     }
     
+    @IBAction func tapAddButton(_ sender: Any) {
+        guard let vc = storyboard?.instantiateViewController(withIdentifier: "enter") as? EntryViewController else {
+            return
+        }
+        vc.completionHandler = { [weak self] in
+            self?.refresh()
+        }
+        
+    }
+    
+    func refresh() {
+        data = realm.objects(ToDoListItem.self).map( { $0 })
+        tableView.reloadData()
+    }
 }
